@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: bernarm111-config
+ labels:
+   app: postgres
+data:
+ PROD_SECRET_KEY: i-love-bernardo-dev
+ PROD_DATABASE: grkvztzz
+ PROD_USER: grkvztzz
+ PROD_PASSWORD: TOom-gTCITAC-vzElnY9Gxks-SjoFvJY
+ PROD_HOST: isilo.db.elephantsql.com
+ PROD_PORT: "5432"
+
+
+
+
+
