@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Link(models.Model):
-    nombre = models.TextField(blank=True)
+    nombre = models.TextField()
     edad = models.IntegerField()
     nacionalidad = models.TextField(blank=True)
     estatura = models.IntegerField()
