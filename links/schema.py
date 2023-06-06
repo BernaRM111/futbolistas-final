@@ -45,8 +45,18 @@ class CreateLink(graphene.Mutation):
 
     #3
     def mutate(self, info, nombre, edad, nacionalidad, estatura, peso, club, posicion, goles, asistencias, imagen):
-        link = Link(nombre=nombre, edad=edad, nacionalidad=nacionalidad, estatura=estatura, peso=peso, club=club, posicion=posicion,
-            goles=goles, asistencias=asistencias, imagen=imagen)
+        link = Link(
+            nombre=nombre, 
+            edad=edad, 
+            nacionalidad=nacionalidad, 
+            estatura=estatura, 
+            peso=peso, 
+            club=club, 
+            posicion=posicion,
+            goles=goles, 
+            asistencias=asistencias, 
+            imagen=imagen
+        )
         link.save()
 
         return CreateLink(
