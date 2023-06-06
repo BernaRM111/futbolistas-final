@@ -62,13 +62,13 @@ class CreateLink(graphene.Mutation):
         return CreateLink(
             id=link.id,
             nombre=link.nombre,
-            edad=link.edad,
             nacionalidad=link.nacionalidad,
+            posicion=link.posicion,
+            club=link.club,
+            goles=link.goles,
+            edad=link.edad,
             estatura=link.estatura,
             peso=link.peso,
-            club=link.club,
-            posicion=link.posicion,
-            goles=link.goles,
             asistencias=link.asistencias,
             imagen=link.imagen,
         )
